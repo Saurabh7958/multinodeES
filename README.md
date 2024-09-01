@@ -1,7 +1,7 @@
 Steps:
 
     Create an S3 Bucket:
-    Set up an S3 bucket for storing Terraform state files.
+    Set up an S3 bucket for storing Terraform state files and to keep your certificate as well.
 
     Update Configuration Files:
         _data.tf: Add tags to describe your VPC and subnets.
