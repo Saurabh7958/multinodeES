@@ -1,8 +1,19 @@
-Create a s3 bucket
-Update _data.tf with your tags to describe vpc and subnet
-Update var.tf to change number of nodes or the name of nodes
-If you want to create specific password then remove auto generated pass block from main.tf and from var.tf you can directly pass the desired password same as username
-After all the changes simply run :
-terraform init
-terraform plan
-terraform apply
+Steps:
+
+    Create an S3 Bucket:
+    Set up an S3 bucket for storing Terraform state files.
+
+    Update Configuration Files:
+        _data.tf: Add tags to describe your VPC and subnets.
+        var.tf: Modify the number of nodes or node names as needed.
+        main.tf: For a custom password, remove the auto-generated password block and directly set the desired password in var.tf.
+
+    Run Terraform Commands:
+        Initialize: terraform init
+        Plan: terraform plan
+        Apply: terraform apply
+
+Notes:
+
+    Adjust configurations according to your needs.
+    The setup ensures high availability and scalability for Elasticsearch.
